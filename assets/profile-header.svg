@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="250" viewBox="0 0 1200 250" role="img" aria-label="Matheus Nascimento — GitHub profile">
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070709"/>
+      <stop offset="0.52" stop-color="#0d0912"/>
+      <stop offset="1" stop-color="#07100b"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" x2="1">
+      <stop stop-color="#a855f7"/>
+      <stop offset="1" stop-color="#a3e635"/>
+    </linearGradient>
+    <radialGradient id="violetGlow">
+      <stop stop-color="#9333ea" stop-opacity=".30"/>
+      <stop offset="1" stop-color="#9333ea" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="greenGlow">
+      <stop stop-color="#84cc16" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#84cc16" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#ffffff" stroke-opacity=".045"/>
+    </pattern>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="frame"><rect width="1200" height="250" rx="20"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="250" fill="url(#background)"/>
+    <rect width="1200" height="250" fill="url(#grid)"/>
+    <circle cx="105" cy="45" r="230" fill="url(#violetGlow)">
+      <animate attributeName="opacity" values=".55;.95;.55" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1100" cy="205" r="260" fill="url(#greenGlow)">
+      <animate attributeName="opacity" values=".9;.45;.9" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <g opacity=".75" filter="url(#softGlow)">
+      <circle cx="1015" cy="125" r="66" fill="none" stroke="#a855f7" stroke-width="2" stroke-dasharray="7 14">
+        <animateTransform attributeName="transform" type="rotate" from="0 1015 125" to="360 1015 125" dur="16s" repeatCount="indefinite"/>
+      </circle>
+      <path d="M954 120q28 40 61 40t61-40" fill="none" stroke="#a3e635" stroke-width="4" stroke-linecap="round"/>
+      <path d="M978 105l14-5M1038 100l14 5" stroke="#a3e635" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <text x="76" y="72" fill="#a3e635" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="16" font-weight="700" letter-spacing="5">GITHUB PROFILE // 05241303</text>
+    <text x="72" y="146" fill="#f4f4f5" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="60" font-weight="800" letter-spacing="1">MATHEUS NASCIMENTO</text>
+    <text x="76" y="190" fill="#aaa4b2" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="18" letter-spacing="3">BUILD  •  LEARN  •  CREATE  •  REPEAT</text>
+    <rect x="0" y="244" width="1200" height="6" fill="url(#neon)"/>
+    <rect x="-260" y="0" width="180" height="250" fill="#ffffff" opacity=".035" transform="skewX(-18)">
+      <animate attributeName="x" values="-260;1400" dur="7s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
